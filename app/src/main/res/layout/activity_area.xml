@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:clickable="true"
     android:focusableInTouchMode="true"
-    tools:context=".AreaActivity">
+    tools:context=".AreaActivity"
+    android:focusable="true">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/outlinedTextField_area_unit"
@@ -120,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="26sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
     </androidx.cardview.widget.CardView>
 
     <Button
