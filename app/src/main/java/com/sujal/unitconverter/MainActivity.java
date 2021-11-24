@@ -2,7 +2,6 @@ package com.sujal.unitconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mileage_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MileageActivity.class));
+                startActivity(new Intent(MainActivity.this, TemperatureActivity.class));
             }
         });
 

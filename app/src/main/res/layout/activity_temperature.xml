@@ -10,7 +10,7 @@
     android:focusable="true">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField_area_unit"
+        android:id="@+id/outlinedTextField_temperature_unit"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/area_units"
+            android:id="@+id/temperature_units"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
@@ -33,17 +33,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout_area_from"
+        android:id="@+id/textInputLayout_temperature_from"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView_area"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_temperature"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_area_unit">
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField_temperature_unit">
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView_from"
@@ -56,21 +56,21 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
-        android:id="@+id/imageView_area"
+        android:id="@+id/imageView_temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="62dp"
         android:contentDescription="@string/convert_icon"
         android:src="@drawable/ic_baseline_sync_alt_24"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout_area_to"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout_temperature_to"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_area_from" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_temperature_from" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout_area_to"
+        android:id="@+id/textInputLayout_temperature_to"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_area">
+        app:layout_constraintTop_toBottomOf="@+id/imageView_temperature">
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView_to"
@@ -92,7 +92,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView_area_output"
+        android:id="@+id/cardView_temperature_output"
         android:layout_width="fill_parent"
         android:layout_height="150dp"
         android:layout_marginStart="20dp"
@@ -101,11 +101,11 @@
         android:layout_marginBottom="50dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_convert_area"
+        app:layout_constraintBottom_toTopOf="@+id/button_convert_temperature"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_area_to"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_temperature_to"
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
@@ -116,16 +116,16 @@
             android:text="@string/output" />
 
         <TextView
-            android:id="@+id/textView_area_output"
+            android:id="@+id/textView_temperature_output"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="26sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button_convert_area"
+        android:id="@+id/button_convert_temperature"
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

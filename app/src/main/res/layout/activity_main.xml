@@ -136,8 +136,8 @@
                 android:layout_height="75dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="25dp"
-                android:contentDescription="@string/mileage"
-                app:srcCompat="@drawable/mileage" />
+                android:contentDescription="@string/temperature"
+                app:srcCompat="@drawable/temperature" />
 
             <TextView
                 android:id="@+id/textView_mileage"
@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="150dp"
-                android:text="@string/mileage"
+                android:text="@string/temperature"
                 android:textSize="25sp"
                 android:textStyle="bold" />
         </androidx.cardview.widget.CardView>
