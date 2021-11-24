@@ -51,10 +51,10 @@ public class LengthActivity extends AppCompatActivity {
 
                     double enteredUnits = Double.parseDouble(outlinedTextField_length_unit.getText().toString());
 
-                    AreaConverter.Unit fromUnit1 = AreaConverter.Unit.fromString(fromUnit);
-                    AreaConverter.Unit toUnit1 = AreaConverter.Unit.fromString(toUnit);
+                    LengthConverter.Unit fromUnit1 = LengthConverter.Unit.fromString(fromUnit);
+                    LengthConverter.Unit toUnit1 = LengthConverter.Unit.fromString(toUnit);
 
-                    AreaConverter converter = new AreaConverter(fromUnit1, toUnit1);
+                    LengthConverter converter = new LengthConverter(fromUnit1, toUnit1);
                     double result = converter.convert(enteredUnits);
                     length_output_text.setText(String.valueOf(result));
                 } catch (Exception e) {
