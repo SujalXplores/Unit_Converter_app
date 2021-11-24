@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class AreaActivity extends AppCompatActivity {
 
-    String[] area_unit_list = {"Inch", "Centimeter", "Meter", "Mile", "Kilometer", "Foot", "Yard"};
+    String[] area_unit_list = {"Acre", "Hactare", "SquareMeter", "SquareFoot", "SquareInch", "SquareKilometer", "SquareYard"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

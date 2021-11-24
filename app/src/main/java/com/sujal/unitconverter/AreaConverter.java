@@ -2,13 +2,13 @@ package com.sujal.unitconverter;
 
 public class AreaConverter {
     public enum Unit {
-        INCH,
-        CENTIMETER,
-        FOOT,
-        YARD,
-        METER,
-        MILE,
-        KILOMETER;
+        Acre,
+        Hactare,
+        SquareMeter,
+        SquareFoot,
+        SquareInch,
+        SquareKilometer,
+        SquareYard;
 
         // Helper method to convert text to one of the above constants
         public static Unit fromString(String text) {
@@ -30,109 +30,109 @@ public class AreaConverter {
         double constant = 1;
 
         switch (from) {
-            case INCH:
-                if (to == Unit.CENTIMETER) {
-                    constant = 2.54;
-                } else if (to == Unit.FOOT) {
-                    constant = 0.0833333;
-                } else if (to == Unit.YARD) {
-                    constant = 0.0277778;
-                } else if (to == Unit.METER) {
-                    constant = 0.0254;
-                } else if (to == Unit.MILE) {
-                    constant = 1.5783e-5;
-                } else if (to == Unit.KILOMETER) {
-                    constant = 2.54e-5;
+            case Acre:
+                if (to == Unit.Hactare) {
+                    constant = 0.404686;
+                } else if (to == Unit.SquareMeter) {
+                    constant = 4046.86;
+                } else if (to == Unit.SquareFoot) {
+                    constant = 43560;
+                } else if (to == Unit.SquareInch) {
+                    constant = 6.273e+6;
+                } else if (to == Unit.SquareKilometer) {
+                    constant = 0.00404686;
+                } else if (to == Unit.SquareYard) {
+                    constant = 4840;
                 }
                 break;
-            case CENTIMETER:
-                if (to == Unit.INCH) {
-                    constant = 0.393701;
-                } else if (to == Unit.FOOT) {
-                    constant = 0.0328084;
-                } else if (to == Unit.YARD) {
-                    constant = 0.0109361;
-                } else if (to == Unit.METER) {
+            case Hactare:
+                if (to == Unit.Acre) {
+                    constant = 2.47105;
+                } else if (to == Unit.SquareMeter) {
+                    constant = 10000;
+                } else if (to == Unit.SquareFoot) {
+                    constant = 107639;
+                } else if (to == Unit.SquareInch) {
+                    constant = 1.55e+7;
+                } else if (to == Unit.SquareKilometer) {
                     constant = 0.01;
-                } else if (to == Unit.MILE) {
-                    constant = 6.2137e-6;
-                } else if (to == Unit.KILOMETER) {
-                    constant = 1e-5;
+                } else if (to == Unit.SquareYard) {
+                    constant = 11959.9;
                 }
                 break;
-            case FOOT:
-                if (to == Unit.INCH) {
-                    constant = 12;
-                } else if (to == Unit.CENTIMETER) {
-                    constant = 30.48;
-                } else if (to == Unit.YARD) {
-                    constant = 0.333333;
-                } else if (to == Unit.METER) {
-                    constant = 0.3048;
-                } else if (to == Unit.MILE) {
-                    constant = 0.000189394;
-                } else if (to == Unit.KILOMETER) {
-                    constant = 0.0003048;
+            case SquareMeter:
+                if (to == Unit.Acre) {
+                    constant = 0.000247105;
+                } else if (to == Unit.Hactare) {
+                    constant = 1e-4;
+                } else if (to == Unit.SquareFoot) {
+                    constant = 10.7639;
+                } else if (to == Unit.SquareInch) {
+                    constant = 1550;
+                } else if (to == Unit.SquareKilometer) {
+                    constant = 1e-6;
+                } else if (to == Unit.SquareYard) {
+                    constant = 1.19599;
                 }
                 break;
-            case YARD:
-                if (to == Unit.INCH) {
-                    constant = 36;
-                } else if (to == Unit.CENTIMETER) {
-                    constant = 91.44;
-                } else if (to == Unit.FOOT) {
-                    constant = 3;
-                } else if (to == Unit.METER) {
-                    constant = 0.9144;
-                } else if (to == Unit.MILE) {
-                    constant = 0.000568182;
-                } else if (to == Unit.KILOMETER) {
-                    constant = 0.0009144;
+            case SquareFoot:
+                if (to == Unit.Acre) {
+                    constant = 2.2957e-5;
+                } else if (to == Unit.Hactare) {
+                    constant = 9.2903e-6;
+                } else if (to == Unit.SquareMeter) {
+                    constant = 0.092903;
+                } else if (to == Unit.SquareInch) {
+                    constant = 144;
+                } else if (to == Unit.SquareKilometer) {
+                    constant = 9.2903e-8;
+                } else if (to == Unit.SquareYard) {
+                    constant = 0.111111;
                 }
                 break;
-            case METER:
-                if (to == Unit.INCH) {
-                    constant = 39.3701;
-                } else if (to == Unit.CENTIMETER) {
+            case SquareInch:
+                if (to == Unit.Acre) {
+                    constant = 1.5942e-7;
+                } else if (to == Unit.Hactare) {
+                    constant = 6.4516e-8;
+                } else if (to == Unit.SquareMeter) {
+                    constant = 0.00064516;
+                } else if (to == Unit.SquareFoot) {
+                    constant = 0.00694444;
+                } else if (to == Unit.SquareKilometer) {
+                    constant = 6.4516e-10;
+                } else if (to == Unit.SquareYard) {
+                    constant = 0.000771605;
+                }
+                break;
+            case SquareKilometer:
+                if (to == Unit.Acre) {
+                    constant = 247.105;
+                } else if (to == Unit.Hactare) {
                     constant = 100;
-                } else if (to == Unit.FOOT) {
-                    constant = 3.28084;
-                } else if (to == Unit.YARD) {
-                    constant = 1.09361;
-                } else if (to == Unit.MILE) {
-                    constant = 0.000621371;
-                } else if (to == Unit.KILOMETER) {
-                    constant = 0.001;
+                } else if (to == Unit.SquareMeter) {
+                    constant = 1e+6;
+                } else if (to == Unit.SquareFoot) {
+                    constant = 1.076e+7;
+                } else if (to == Unit.SquareInch) {
+                    constant = 1.55e+9;
+                } else if (to == Unit.SquareYard) {
+                    constant = 1.196e+6;
                 }
                 break;
-            case MILE:
-                if (to == Unit.INCH) {
-                    constant = 63360;
-                } else if (to == Unit.CENTIMETER) {
-                    constant = 160934;
-                } else if (to == Unit.FOOT) {
-                    constant = 5280;
-                } else if (to == Unit.YARD) {
-                    constant = 1760;
-                } else if (to == Unit.METER) {
-                    constant = 1609.34;
-                } else if (to == Unit.KILOMETER) {
-                    constant = 1.60934;
-                }
-                break;
-            case KILOMETER:
-                if (to == Unit.INCH) {
-                    constant = 39370.1;
-                } else if (to == Unit.CENTIMETER) {
-                    constant = 100000;
-                } else if (to == Unit.FOOT) {
-                    constant = 3280.84;
-                } else if (to == Unit.YARD) {
-                    constant = 1093.61;
-                } else if (to == Unit.METER) {
-                    constant = 1000;
-                } else if (to == Unit.MILE) {
-                    constant = 0.621371;
+            case SquareYard:
+                if (to == Unit.Acre) {
+                    constant = 0.000206612;
+                } else if (to == Unit.Hactare) {
+                    constant = 8.3613e-5;
+                } else if (to == Unit.SquareMeter) {
+                    constant = 0.836127;
+                } else if (to == Unit.SquareFoot) {
+                    constant = 9;
+                } else if (to == Unit.SquareInch) {
+                    constant = 1296;
+                } else if (to == Unit.SquareKilometer) {
+                    constant = 8.3613e-7;
                 }
                 break;
         }
