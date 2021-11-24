@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="area">Area</string>
+    <string name="speed">Speed</string>
+    <string name="length">Length</string>
+    <string name="mileage">Mileage</string>
+    <string name="convert">Convert</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="enter_units_to_convert">Enter Units to convert</string>
+    <string name="convert_icon">Convert Icon</string>
+    <string name="output">Output</string>
+</resources>
