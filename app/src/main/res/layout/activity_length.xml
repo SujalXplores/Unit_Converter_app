@@ -94,7 +94,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView_length_output"
         android:layout_width="fill_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="51dp"
         android:layout_marginEnd="20dp"
@@ -120,8 +120,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="26sp"
-            android:textStyle="bold"/>
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </androidx.cardview.widget.CardView>
 
     <Button
