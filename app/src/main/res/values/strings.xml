@@ -9,6 +9,5 @@
     <string name="from">From</string>
     <string name="enter_units_to_convert">Enter Units to convert</string>
     <string name="convert_icon">Convert Icon</string>
-    <string name="output">Output</string>
     <string name="about">About</string>
 </resources>

@@ -99,6 +99,7 @@
         android:layout_marginTop="51dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="50dp"
+        android:visibility="invisible"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
         app:layout_constraintBottom_toTopOf="@+id/button_convert_temperature"
@@ -107,13 +108,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout_temperature_to"
         app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="@string/output" />
 
         <TextView
             android:id="@+id/textView_temperature_output"

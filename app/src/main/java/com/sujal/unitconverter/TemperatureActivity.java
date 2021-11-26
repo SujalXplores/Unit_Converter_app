@@ -1,6 +1,7 @@
 package com.sujal.unitconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
 import android.view.View;
@@ -57,6 +58,9 @@ public class TemperatureActivity extends AppCompatActivity {
 
                     TemperatureConverter converter = new TemperatureConverter(fromUnit1, toUnit1);
                     double result = converter.convert(enteredUnits);
+
+                    CardView output_card = findViewById(R.id.cardView_temperature_output);
+                    output_card.setVisibility(View.VISIBLE);
                     temperature_output_text.setText(String.valueOf(result));
                 } catch (Exception e) {
                     Toast.makeText(getBaseContext(), "Invalid input entered !", Toast.LENGTH_LONG).show();
