@@ -15,7 +15,10 @@
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_speed.xml" value="0.2" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_temperature.xml" value="0.25" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_temprature.xml" value="0.14492753623188406" />
+        <entry key="..\:/and_proj/app/src/main/res/layout/settings_activity.xml" value="0.20104166666666667" />
         <entry key="..\:/and_proj/app/src/main/res/menu/main_menu.xml" value="0.22" />
+        <entry key="..\:/and_proj/app/src/main/res/menu/menu.xml" value="0.20104166666666667" />
+        <entry key="..\:/and_proj/app/src/main/res/xml/root_preferences.xml" value="0.25" />
       </map>
     </option>
   </component>
