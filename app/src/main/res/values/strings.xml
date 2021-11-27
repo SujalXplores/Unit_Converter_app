@@ -9,4 +9,14 @@
     <string name="from">From</string>
     <string name="enter_units_to_convert">Enter Units to convert</string>
     <string name="convert_icon">Convert Icon</string>
+    <string name="settings">Settings</string>
+    <string name="theme">Theme</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_summary">Toggle Dark/Light Mode.</string>
+    <string name="sujal_shah">Sujal Shah</string>
+    <string name="developed_by">Developed By</string>
+    <string name="about">About</string>
+    <string name="about_text">A simple unit converter app with awesome features.</string>
+    <string name="app_version">App Version</string>
+    <string name="version_code">1.0</string>
 </resources>

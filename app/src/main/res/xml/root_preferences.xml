@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start">
+
+    <PreferenceCategory
+        android:title="@string/theme"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_dark_mode"
+            android:key="switch_dark_mode"
+            android:summary="@string/dark_mode_summary"
+            android:title="@string/dark_mode" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/about"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:selectable="false"
+            android:summary="@string/about_text"
+            app:icon="@drawable/ic_info" />
+
+        <Preference
+            android:summary="@string/version_code"
+            android:title="@string/app_version"
+            app:icon="@drawable/ic_system_update" />
+
+        <Preference
+            android:summary="@string/sujal_shah"
+            android:title="@string/developed_by"
+            app:icon="@drawable/ic_face" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

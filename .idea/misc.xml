@@ -6,12 +6,14 @@
         <entry key="..\:/and_proj/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1109375" />
         <entry key="..\:/and_proj/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1109375" />
         <entry key="..\:/and_proj/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1109375" />
+        <entry key="..\:/and_proj/app/src/main/res/drawable/ic_system_update.xml" value="0.2171875" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_area.xml" value="0.25" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_demo.xml" value="0.1" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_launcher.xml" value="0.1" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_length.xml" value="0.16" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_mileage.xml" value="0.1" />
+        <entry key="..\:/and_proj/app/src/main/res/layout/activity_settings.xml" value="0.67" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_speed.xml" value="0.2" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_temperature.xml" value="0.25" />
         <entry key="..\:/and_proj/app/src/main/res/layout/activity_temprature.xml" value="0.14492753623188406" />
@@ -19,6 +21,7 @@
         <entry key="..\:/and_proj/app/src/main/res/menu/main_menu.xml" value="0.22" />
         <entry key="..\:/and_proj/app/src/main/res/menu/menu.xml" value="0.20104166666666667" />
         <entry key="..\:/and_proj/app/src/main/res/xml/root_preferences.xml" value="0.25" />
+        <entry key="..\:/and_proj/app/src/main/res/xml/settings.xml" value="0.33" />
       </map>
     </option>
   </component>
