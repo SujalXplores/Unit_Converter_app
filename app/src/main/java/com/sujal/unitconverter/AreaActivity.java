@@ -1,5 +1,6 @@
 package com.sujal.unitconverter;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -21,6 +22,11 @@ public class AreaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_area);
+
+        ActionBar action_bar = getSupportActionBar();
+        action_bar.setTitle("Area Converter");
+        action_bar.setDisplayShowHomeEnabled(true);
+        action_bar.setDisplayHomeAsUpEnabled(true);
 
         AutoCompleteTextView autoCompleteTextView_from = findViewById(R.id.autoCompleteTextView_from);
         AutoCompleteTextView autoCompleteTextView_to = findViewById(R.id.autoCompleteTextView_to);
