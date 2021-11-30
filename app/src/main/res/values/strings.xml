@@ -19,4 +19,5 @@
     <string name="about_text">A simple unit converter app with awesome features.</string>
     <string name="app_version">App Version</string>
     <string name="version_code">1.0</string>
+    <string name="default_value">1</string>
 </resources>

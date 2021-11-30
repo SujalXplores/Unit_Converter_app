@@ -1,11 +1,12 @@
 package com.sujal.unitconverter;
 
+import android.content.SharedPreferences;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Toast;
-
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
@@ -17,6 +18,13 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
+
+        ActionBar action_bar = getSupportActionBar();
+
+        if (action_bar != null) {
+            action_bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_500)));
+        }
+
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
@@ -35,21 +43,30 @@ public class SettingsActivity extends AppCompatActivity {
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             setPreferencesFromResource(R.xml.root_preferences, rootKey);
 
-            SwitchPreference pref = (SwitchPreference)findPreference("switch_dark_mode");
+            SwitchPreference pref = findPreference("switch_dark_mode");
 
-            pref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-                @Override
-                public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    boolean switched = ((SwitchPreference) preference).isChecked();
-                    if(switched) {
-                        Toast.makeText(getContext(), "Disabled", Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(getContext(), "Enabled", Toast.LENGTH_LONG).show();
-                        Log.i("Value", newValue.toString());
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+            SharedPreferences.Editor editor = prefs.edit();
+
+            if (pref != null) {
+                pref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+                    @Override
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+                        boolean switched = ((SwitchPreference) preference).isChecked();
+                        if(switched) {
+                            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                            Toast.makeText(getContext(), "Disabled", Toast.LENGTH_LONG).show();
+                            editor.putBoolean("DARK_MODE", false);
+                        } else {
+                            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                            Toast.makeText(getContext(), "Enabled", Toast.LENGTH_LONG).show();
+                            editor.putBoolean("DARK_MODE", true);
+                        }
+                        editor.apply();
+                        return true;
                     }
-                    return true;
-                }
-            });
+                });
+            }
         }
     }
 }

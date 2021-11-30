@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -24,9 +25,12 @@ public class LengthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_length);
 
         ActionBar action_bar = getSupportActionBar();
-        action_bar.setTitle("Length Converter");
-        action_bar.setDisplayShowHomeEnabled(true);
-        action_bar.setDisplayHomeAsUpEnabled(true);
+        if(action_bar != null) {
+            action_bar.setTitle("Length Converter");
+            action_bar.setDisplayShowHomeEnabled(true);
+            action_bar.setDisplayHomeAsUpEnabled(true);
+            action_bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_500)));
+        }
 
         AutoCompleteTextView autoCompleteTextView_from = findViewById(R.id.autoCompleteTextView_from);
         AutoCompleteTextView autoCompleteTextView_to = findViewById(R.id.autoCompleteTextView_to);

@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:textColorHint="#757575"
+            android:text="@string/default_value"
             tools:ignore="TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -126,7 +127,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text="@string/convert"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/purple_500"
         app:icon="@drawable/ic_baseline_sync_alt_24"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
