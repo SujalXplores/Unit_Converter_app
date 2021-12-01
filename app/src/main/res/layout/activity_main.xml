@@ -33,7 +33,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="25dp"
                 android:contentDescription="@string/area"
-                app:srcCompat="@drawable/area" />
+                app:srcCompat="@drawable/ic_area" />
 
             <TextView
                 android:id="@+id/textView_area"
@@ -67,7 +67,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="25dp"
                 android:contentDescription="@string/speed"
-                app:srcCompat="@drawable/speed" />
+                app:srcCompat="@drawable/ic_speed" />
 
             <TextView
                 android:id="@+id/textView_speed"
@@ -101,7 +101,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="25dp"
                 android:contentDescription="@string/length"
-                app:srcCompat="@drawable/length"
+                app:srcCompat="@drawable/ic_length"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
@@ -137,7 +137,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="25dp"
                 android:contentDescription="@string/temperature"
-                app:srcCompat="@drawable/temperature" />
+                app:srcCompat="@drawable/ic_temperature" />
 
             <TextView
                 android:id="@+id/textView_mileage"
