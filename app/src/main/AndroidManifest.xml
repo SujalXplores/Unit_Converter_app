@@ -40,9 +40,17 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".MassActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".FrequencyActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
