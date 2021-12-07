@@ -55,11 +55,11 @@ public class SettingsActivity extends AppCompatActivity {
                         boolean switched = ((SwitchPreference) preference).isChecked();
                         if(switched) {
                             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                            Toast.makeText(getContext(), "Disabled", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(), "Dark mode disabled", Toast.LENGTH_LONG).show();
                             editor.putBoolean("DARK_MODE", false);
                         } else {
                             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                            Toast.makeText(getContext(), "Enabled", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(), "Dark mode enabled", Toast.LENGTH_LONG).show();
                             editor.putBoolean("DARK_MODE", true);
                         }
                         editor.apply();

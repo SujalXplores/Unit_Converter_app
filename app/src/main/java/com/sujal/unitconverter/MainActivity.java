@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
             action_bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_500)));
         }
 
-        CardView area_card, length_card, mileage_card, speed_card;
+        CardView area_card, length_card, temperature_card, speed_card;
 
         area_card = findViewById(R.id.cardView_area);
         length_card = findViewById(R.id.cardView_length);
-        mileage_card = findViewById(R.id.cardView_mileage);
+        temperature_card = findViewById(R.id.cardView_temperature);
         speed_card = findViewById(R.id.cardView_speed);
 
         area_card.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mileage_card.setOnClickListener(new View.OnClickListener() {
+        temperature_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TemperatureActivity.class));
