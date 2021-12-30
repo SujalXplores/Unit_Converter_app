@@ -71,7 +71,7 @@ public class FrequencyActivity extends AppCompatActivity {
 
                     CardView output_card = findViewById(R.id.cardView_frequency_output);
                     output_card.setVisibility(View.VISIBLE);
-                    frequency_output_text.setText(String.valueOf(result));
+                    frequency_output_text.setText(String.valueOf(result) + " " + toUnit);
                 } catch (NumberFormatException e) {
                     outlinedTextField_frequency_unit.setError("Please enter some value!");
                     outlinedTextField_frequency_unit.requestFocus();

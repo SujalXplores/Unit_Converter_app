@@ -71,7 +71,7 @@ public class TemperatureActivity extends AppCompatActivity {
 
                     CardView output_card = findViewById(R.id.cardView_temperature_output);
                     output_card.setVisibility(View.VISIBLE);
-                    temperature_output_text.setText(String.valueOf(result));
+                    temperature_output_text.setText(String.valueOf(result) + " " + toUnit);
                 } catch (NumberFormatException e) {
                     outlinedTextField_temperature_unit.setError("Please enter some value!");
                     outlinedTextField_temperature_unit.requestFocus();

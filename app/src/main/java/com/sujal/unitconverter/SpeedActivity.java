@@ -71,7 +71,7 @@ public class SpeedActivity extends AppCompatActivity {
 
                     CardView output_card = findViewById(R.id.cardView_speed_output);
                     output_card.setVisibility(View.VISIBLE);
-                    speed_output_text.setText(String.valueOf(result));
+                    speed_output_text.setText(String.valueOf(result) + " " + toUnit);
                 } catch (NumberFormatException e) {
                     outlinedTextField_speed_unit.setError("Please enter some value!");
                     outlinedTextField_speed_unit.requestFocus();

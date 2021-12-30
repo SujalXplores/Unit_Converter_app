@@ -71,7 +71,7 @@ public class AreaActivity extends AppCompatActivity {
 
                     CardView output_card = findViewById(R.id.cardView_area_output);
                     output_card.setVisibility(View.VISIBLE);
-                    area_output_text.setText(String.valueOf(result));
+                    area_output_text.setText(String.valueOf(result) + " " + toUnit);
                 } catch (NumberFormatException e) {
                     outlinedTextField_area_unit.setError("Please enter some value!");
                     outlinedTextField_area_unit.requestFocus();
