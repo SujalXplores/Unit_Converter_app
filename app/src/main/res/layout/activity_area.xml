@@ -63,7 +63,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="62dp"
         android:contentDescription="@string/convert_icon"
-        android:src="@drawable/ic_baseline_sync_alt_24"
+        app:srcCompat="@drawable/ic_baseline_sync_alt_24"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout_area_to"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
