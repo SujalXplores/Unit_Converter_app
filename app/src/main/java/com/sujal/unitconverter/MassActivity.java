@@ -72,8 +72,13 @@ public class MassActivity extends AppCompatActivity {
                     CardView output_card = findViewById(R.id.cardView_mass_output);
                     output_card.setVisibility(View.VISIBLE);
                     mass_output_text.setText(String.valueOf(result));
+                } catch (NumberFormatException e) {
+                    outlinedTextField_mass_unit.setError("Please enter some value!");
+                    outlinedTextField_mass_unit.requestFocus();
+                } catch (IllegalArgumentException e) {
+                    Toast.makeText(getBaseContext(), "Select option from dropdown first!", Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
-                    Toast.makeText(getBaseContext(), "Invalid input entered !", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "Error in conversion!", Toast.LENGTH_LONG).show();
                 }
             }
         });

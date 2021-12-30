@@ -72,8 +72,13 @@ public class SpeedActivity extends AppCompatActivity {
                     CardView output_card = findViewById(R.id.cardView_speed_output);
                     output_card.setVisibility(View.VISIBLE);
                     speed_output_text.setText(String.valueOf(result));
+                } catch (NumberFormatException e) {
+                    outlinedTextField_speed_unit.setError("Please enter some value!");
+                    outlinedTextField_speed_unit.requestFocus();
+                } catch (IllegalArgumentException e) {
+                    Toast.makeText(getBaseContext(), "Select option from dropdown first!", Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
-                    Toast.makeText(getBaseContext(), "Invalid input entered !", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "Error in conversion!", Toast.LENGTH_LONG).show();
                 }
             }
         });
